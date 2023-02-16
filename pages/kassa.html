@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <!-- länk som ska in i head taggen, den behöver ligga ovanför din egen CSS fil då den behöver läsas in av webbläsaren innan din CSS läses in. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://kit.fontawesome.com/003b6bb9ad.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/kassa.css" />
+  </head>
+  <body>
+<header>
+  
+
+  <div class="nav-bar">
+
+    <div class="dropdown" id="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      
+      </button>
+      <ul class="dropdown-menu">
+        <li><button class="dropdown-item" type="button" onclick="document.location='../shop.html'">Butik</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Om oss</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='../inspiration.html'">Inspiration</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='kassa.html'">kassa</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='konto.html'">Konto</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Kontakt</button></li>
+      </ul>
+    </div>
+
+
+    <h5 class="logga-text" onclick="document.location='../index.html'">Skaparhyttan</h5>
+   <!-- <div>  <i class="fa-solid fa-cart-shopping shoppingcart"  style='font-size:24px'></i> </div> -->
+    <div>     
+
+      <div>     
+        <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a>
+        <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart"> </a>
+        </div>
+ <!-- <img src="img/user.png" onclick="document.location='#kontakt-title'"  class="header-user"> -->
+
+   <!-- <img src="img/cart.png" onclick="document.location='kassa.html'"  class="fa-solid fa-cart-shopping shoppingcart">  -->
+  </div>
+ 
+
+
+</header>
+
+
+<main>
+  <div>
+<h1 class="text">Kassan är under uppbyggnad</h1>
+</div>
+</main>
+
+
+  <footer>
+
+  
+    <div class="footer-content" id="footer-content">
+    
+      <div class="footer-ul-container">
+          <ul class="category">
+              <li class="category-title" id="category-title">butik</li>
+              <li><a href="../pages/smycken.html" class="footer-link">smycken</a></li>
+              <li><a href="../pages/konst.html" class="footer-link">konst</a></li>
+              <li><a href="../pages/inredning.html" class="footer-link">inredning</a></li>
+            
+          </ul>
+        
+      </div>
+  </div>
+  <p class="footer-title" id="footer-title">om oss</p>
+  <p class="info">Lorem ipsum, dolor sit auisquam  error ipsum laborum tempore in rerum necessitatibus nostrum nobis modi! Debitis adipisci illum nemo aperiam sed, et accusamus ut officiis. Laborum illo exercitationem quo culpa reprehenderit excepturi distinctio tempore cupiditate praesentium nisi ut iusto, assumenda perferendis facilis voluptas autem fuga sunt ab debitis voluptatum harum eum. Asperiores, natus! Est deserunt incidunt quasi placeat omnis, itaque harum?</p>
+  
+  <p class="footer-title">kontakt</p>
+  <p class="info">email - skaparhyttan@outlook.com</p>
+  <p class="info">telephone - 073-9376010</p>
+  <div class="footer-social-container">
+      <div>
+          <a href="#" class="social-link">terms & services</a>
+          <a href="#" class="social-link">privacy page</a>
+      </div>
+      <div>
+          <a href="https://www.instagram.com/skaparhyttan/" class="social-link">instagram</a>
+          <a href="https://www.facebook.com/SkaparHyttan/?paipv=0&eav=AfZBelnS810zuNOxtmHJAGVBFnXYEYp0sv7fd58NHgyAfPAnP4ENIAqV3CPhnr_xcxA&_rdr" class="social-link">facebook</a>
+        
+      </div>
+  </div>
+  <p class="footer-credit">Butiken med det lilla extra!</p>
+  
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+    <!-- Länk för Javascript filerna, den ska antagligen ligga först den också - men vi har  inte ens börjat med JS på Udemy än, så kan återkomma med det.-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(125, 149, 125, 0.855);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Merienda', cursive;
+    color: #040404;
+}
+
+a {
+ color: rgb(143, 164, 143);
+}
+
+
+.logga-text {
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+    font-family: Merienda;
+    font-weight:bolder;
+    padding: 1%;
+    transition: 0.3s;
+}
+.logga-text:hover{
+    transform: scale(1.2);
+}
+.nav-bar{
+    background-color: rgb(143, 164, 143);
+     width: 100%;
+     position: fixed;
+    z-index: 1;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    }
+
+.shoppingcart{  
+    color: #040404;
+    padding-left: 15px;
+    transition: 0.3s;
+    }
+    
+    .shoppingcart:hover{
+        transform: scale(1.4);
+    }
+   
+.header-user{
+    color:  #040404;
+    transition: 0.3s;
+}   
+.header-user:hover{
+    transform: scale(1.4);
+}
+.frontpage-text{
+    position: absolute;
+    z-index: 1;
+    margin: 10% 10%;
+}
+
+.dropdown-menu{
+    min-width: auto;
+}
+
+.btn-sm{
+    height: 50px;
+    top:50%;
+}
+
+.btn {
+    padding: 0.6rem 1.3rem;
+    background-color: rgb(164, 181, 164);
+    border: 2px solid #040404;
+    font-size: 0.7rem;
+    color: #040404;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    color: #040404;
+    transform: scale(1.3);
+    border: 2px solid #040404;
+    font-weight: bold;
+  }
+ 
+
+  .text{
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 170px;
+    height: 500px;
+    font-size: 40px;
+    color: #040404;
+  }
+
+
+  /* footer */
+
+  .credit{
+    text-align: center;
+    color:#040404;
+    font-family: Merienda, sans-serif;
+  }
+  
+  .credit a{
+    text-decoration: none;
+    color:#FBAB7E;
+    font-weight: bold;
+  } 
+  
+ 
+  footer{
+      position: relative;
+      width: 100%;
+      padding: 40px 10vw;
+      padding-bottom: 80px;
+      background-color: rgba(125, 149, 125, 0.855);
+      font-weight: bold;
+  }
+  
+  .footer-content{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+  }
+  
+  .footer-content .logo{
+      height: 100px;
+  }
+  
+  .footer-ul-container{
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+  
+  .category{
+      width: 200px;
+      font-weight: 700;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 45px;
+      list-style: none;
+  }
+  
+  .category-title{
+      grid-column: span 3;
+      text-transform: capitalize;
+      color:  #040404;
+      font-size: 20px;
+      font-weight: 700;
+    
+      margin-bottom: 10px;
+  }
+  
+  .category .footer-link{
+      text-decoration: none;
+      text-transform: capitalize;
+      color: rgba(4, 4, 4, 0.75);
+  }
+  
+  .footer-link:hover{
+      color: #040404;
+  }
+  .footer-title, .info{
+      color: rgba(4, 4, 4, 0.75);
+      /* margin: 10px 0; */
+      text-transform: capitalize;
+  }
+  
+  .footer-title{
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 30px;
+      color: #040404;
+  }
+  
+  .footer-social-container{
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .social-link{
+      color: #040404;
+      margin-left: 20px;
+      text-transform: capitalize;
+  }
+  
+  .social-link:nth-child(1){
+      margin-left: 0;
+  }
+  
+  .footer-credit{
+      font-weight: 700;
+      font-size: 20px;
+      width: 100%;
+      padding: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      text-align: center;
+      color:  #040404;
+      background: rgba(0, 0, 0, 0.2);
+  }
+ 
+ 
+ .credit{
+     text-align: center;
+     color:#040404;
+  font-family: Merienda, sans-serif;
+   }
+   
+   .credit a{
+     text-decoration: none;
+     color:#FBAB7E;
+     font-weight: bold;
+   } 
+   
