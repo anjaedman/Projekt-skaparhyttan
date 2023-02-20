@@ -26,7 +26,7 @@
 
     <script src="https://kit.fontawesome.com/003b6bb9ad.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
   </head>
   <body>
 <header>
@@ -42,6 +42,7 @@
         <li><button class="dropdown-item" type="button" onclick="document.location='../shop.html'">Butik</button></li>
         <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Om oss</button></li>
         <li><button class="dropdown-item" type="button" onclick="document.location='../inspiration.html'">Inspiration</button></li>
+          <li><button class="dropdown-item" type="button" onclick="document.location='/pages/wishlist.html'">Wishlist</button></li>
         <li><button class="dropdown-item" type="button" onclick="document.location='kassa.html'">kassa</button></li>
         <li><button class="dropdown-item" type="button" onclick="document.location='konto.html'">Konto</button></li>
         <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Kontakt</button></li>
@@ -65,38 +66,45 @@
 
 <main>
 
-    <div class="shop-kort-rubrik" id="shop-kort-rubrik">Butik</div>
+  <div class="card-container"></div>
 
-    <div class="card-group">
+  <div class="card-group">
 
-      <div class="card card-1" style="width: 18rem;">
-        <img src="../img/glassmycken flera.jpg" class="card-img-top bild1" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">GLASSMYCKEN</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <!-- <a href="#" class="btn btn-primary">Mer</a> -->
-        </div>
-      </div>
-    
-      <div class="card card2" style="width: 18rem;">
-        <img src="../img/m-bulle-flera3.jpg" class="card-img-top bild2" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">MINIATYRSMYCKEN</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <!-- <a href="#" class="btn btn-primary">Mer</a> -->
-        </div>
-      </div>
-    
-      <div class="card card3" style="width: 18rem;">
-        <img src="../img/silversmycken.jpg" class="card-img-top bild3" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">SILVERSMYCKEN</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <!-- <a href="#" class="btn btn-primary">Mer</a> -->
-        </div>
-      </div>
-
+  <div class="card card-1" style="width: 18rem;">
+    <img src="../img/Design by Miss Anja Edman 366.jpg" class="card-img-top " alt="...">
+    <a href="../pages/wishlist.html"> <img src="../img/heart.png" class="wishlist-icon"> </a>
+    <div class="card-body">
+      <h5 class="card-title">GLASSMYCKE</h5>
+      <p class="card-text">Skapade i Glas <br> Metoden kallas glasfusion och sker med hög värme under lång tid</p>
+      <p class="card-text-pris">Pris: 350kr </p>
+      <a href="../pages/kassa.html" class="btn btn-primary">HANDLA</a>
+     
     </div>
+  </div>
+
+  <div class="card card-2" style="width: 18rem;">
+    <img src="../img/smycke-blomma.jpg" class="card-img-top " alt="...">
+    <a href="../pages/wishlist.html"> <img src="../img/heart.png" class="wishlist-icon"> </a>
+    <div class="card-body">
+      <h5 class="card-title">SILVERSMYCKE</h5>
+      <p class="card-text">Skapat i silver <br> <br> <br> <br></p>
+      <p class="card-text-pris">Pris: 950kr </p>
+      <a href="../pages/kassa.html" class="btn btn-primary">HANDLA</a>
+    </div>
+  </div>
+
+  <div class="card card-3" style="width: 18rem;">
+    <img src="../img/m-morotskaka3.jpg" class="card-img-top " alt="...">
+    <a href="../pages/wishlist.html"> <img src="../img/heart.png" class="wishlist-icon"> </a>
+    <div class="card-body">
+      <h5 class="card-title">Miniatyrsmycke <br> Morotstårta</h5>
+      <p class="card-text">Roliga miniatyrer som inbjuder till bus och samtal <br> <br></p>
+      <p class="card-text-pris">Pris: 250kr </p>
+      <a href="../pages/kassa.html" class="btn btn-primary">HANDLA</a>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -122,9 +130,13 @@
         
       </div>
   </div>
-  <p class="footer-title">om oss</p>
-  <p class="info">Lorem ipsum, dolor sit auisquam  error ipsum laborum tempore in rerum necessitatibus nostrum nobis modi! Debitis adipisci illum nemo aperiam sed, et accusamus ut officiis. Laborum illo exercitationem quo culpa reprehenderit excepturi distinctio tempore cupiditate praesentium nisi ut iusto, assumenda perferendis facilis voluptas autem fuga sunt ab debitis voluptatum harum eum. Asperiores, natus! Est deserunt incidunt quasi placeat omnis, itaque harum?</p>
-  
+  <p class="footer-title-about" id="footer-title">om oss</p>
+<p class="info-text">Skaparhyttan är ett företag som bygger på Anja Edmans skaparkraft och fantasi. 
+Utbudet  är brett och smalt men alltid med glimten i ögat och fullt av lekfulhet, materialen likaså allt från ull till glas. <br>
+Anja har varit skapande sedan barnsben och nu tagit steget ut i världen så att fler skall få njuta av kreationerna. <br>
+Om du önskar något egendesignat hör av dig, här finns bara möjligheter. <br>
+Välkommen! </p>
+
   <p class="footer-title" id="footer-title">kontakt</p>
   <p class="info">email - skaparhyttan@outlook.com</p>
   <p class="info">telephone - 073-9376010</p>

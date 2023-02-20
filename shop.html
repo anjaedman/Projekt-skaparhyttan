@@ -43,6 +43,7 @@
             <li><button class="dropdown-item" type="button" onclick="document.location='shop.html'">Butik</button></li>
             <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Om oss</button></li>
             <li><button class="dropdown-item" type="button" onclick="document.location='inspiration.html'">Inspiration</button></li>
+            <li><button class="dropdown-item" type="button" onclick="document.location='/pages/wishlist.html'">Wishlist</button></li>
             <li><button class="dropdown-item" type="button" onclick="document.location='/pages/kassa.html'">kassa</button></li>
             <li><button class="dropdown-item" type="button" onclick="document.location='/pages/konto.html'">Konto</button></li>
             <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Kontakt</button></li>
@@ -55,6 +56,7 @@
        
        <div>     
        <a href="#footer-title"> <img src="img/user.png"   class="header-user"> </a>
+
        <a href="/pages/kassa.html"> <img src="img/cart.png"   class="shoppingcart"> </a>
         </div>
      <!-- <img src="img/user.png" onclick="document.location='#kontakt-title'"  class="header-user"> -->
@@ -74,31 +76,43 @@
 
   <div class="card card-1" style="width: 18rem;">
     <img src="img/silversmycken.jpg" class="card-img-top " alt="...">
+    <a href="./pages/wishlist.html"> <img src="img/heart.png" class="wishlist-icon"> </a>
     <div class="card-body">
       <h5 class="card-title">SMYCKEN</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="./pages/smycken.html" class="btn btn-primary">Mer</a>
+      <p class="card-text">Skapade i olika material <br> <br></p>
+      <p class="card-text-pris"> </p>
+      <a href="./pages/smycken.html" class="btn btn-primary">HANDLA</a>
+     
     </div>
   </div>
 
   <div class="card card-2" style="width: 18rem;">
-    <img src="img/Akryltavla växtkraft.jpg" class="card-img-top " alt="...">
+    <img src="img/Akryltavla flower of life.jpg" class="card-img-top " alt="...">
+    <a href="./pages/wishlist.html"> <img src="img/heart.png" class="wishlist-icon"> </a>
     <div class="card-body">
       <h5 class="card-title">KONST</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="./pages/konst.html" class="btn btn-primary">Mer</a>
+      <p class="card-text"> Tavlor målade i metoden Vedic Art  <br></p>
+      <p class="card-text-pris"></p>
+      <a href="./pages/konst.html" class="btn btn-primary">HANDLA</a>
     </div>
   </div>
 
   <div class="card card-3" style="width: 18rem;">
-    <img src="img/vingar.jpg" class="card-img-top " alt="...">
+    <img src="img/i-hus-amsterdam.jpg" class="card-img-top " alt="...">
+    <a href="./pages/wishlist.html"> <img src="img/heart.png" class="wishlist-icon"> </a>
     <div class="card-body">
-      <h5 class="card-title">INREDNING</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="./pages/inredning.html" class="btn btn-primary">Mer</a>
+      <h5 class="card-title">INREDNING </h5>
+      <p class="card-text"> Massor av bus och roligheter <br> <br></p>
+      <p class="card-text-pris"> </p>
+      <a href="./pages/inredning.html" class="btn btn-primary">HANDLA</a>
     </div>
   </div>
 </div>
+
+
+
+<!-- card -->
+
 
 
 </main>
@@ -119,8 +133,12 @@
       
     </div>
 </div>
-<p class="footer-title" id="footer-title">om oss</p>
-<p class="info">Lorem ipsum, dolor sit auisquam  error ipsum laborum tempore in rerum necessitatibus nostrum nobis modi! Debitis adipisci illum nemo aperiam sed, et accusamus ut officiis. Laborum illo exercitationem quo culpa reprehenderit excepturi distinctio tempore cupiditate praesentium nisi ut iusto, assumenda perferendis facilis voluptas autem fuga sunt ab debitis voluptatum harum eum. Asperiores, natus! Est deserunt incidunt quasi placeat omnis, itaque harum?</p>
+<p class="footer-title-about" id="footer-title">om oss</p>
+<p class="info-text">Skaparhyttan är ett företag som bygger på Anja Edmans skaparkraft och fantasi. 
+Utbudet  är brett och smalt men alltid med glimten i ögat och fullt av lekfulhet, materialen likaså allt från ull till glas. <br>
+Anja har varit skapande sedan barnsben och nu tagit steget ut i världen så att fler skall få njuta av kreationerna. <br>
+Om du önskar något egendesignat hör av dig, här finns bara möjligheter. <br>
+Välkommen! </p>
 
 <p class="footer-title">kontakt</p>
 <p class="info">email - skaparhyttan@outlook.com</p>
@@ -155,6 +173,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="app.js"></script>
+    <script src="./js/shop2.js"></script>
   </body>
 </html>
