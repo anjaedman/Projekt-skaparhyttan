@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cart</title>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<link rel="stylesheet" href="../css/shoppingcart.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card-left">
+      <div class="main-image">
+          <img src="../img/Akryltavla porten.jpg">
+          <img src="../img/bambi1.jpg">
+          <img src="../img/astrid.jpg">
+          <img src="../img/hallon1.jpg">
+      </div>
+      <div class="img-select">
+        <div class="img active">
+          <a href="#" data-id="1"><img src="../img/Akryltavla porten.jpg"></a>
+        </div>
+        <div class="img">
+          <a href="#" data-id="2"><img src="../img/bambi1.jpg"></a>
+        </div>
+        <div class="img">
+          <a href="#" data-id="3"><img src="../img/astrid.jpg"></a>
+        </div>
+        <div class="img">
+          <a href="#" data-id="4"><img src="../img/hallon1.jpg"></a>
+        </div> 
+      </div>
+    </div>
+    <div class="card-right">
+        <h2>Tavla "Porten"</h2>
+        <div class="star">
+         <div class="star-group">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+         </div>
+         <span>3 Omdömen</span>
+        </div>
+        <h4>kr 1500.00   <span> kr 2000.00</span></h4>
+        <p>Akrylmålning i tekniken Vedic Art <br> Mått: 100cm x 50cm</p>
+
+        <div class="form">
+          <div class="form-group">
+            <label>Färg</label>
+            <select>
+                <option>Svart</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Antal</label>
+            <div class="input-group">
+              <button class="minus">-</button>
+              <input type="text" value="1" id="qty">
+              <button class="plus">+</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-cart">Lägg till</button>
+
+    </div>
+  </div>
+  
+  <script src="../js/shoppingcart.js"></script>
+</body>
+</html>
+
+

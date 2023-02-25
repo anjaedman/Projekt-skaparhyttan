@@ -100,7 +100,9 @@ a {
     font-weight: bold;
   }
   
- 
+ main{
+    padding-top: 50px;
+ }
 
   .text{
     text-decoration: underline;

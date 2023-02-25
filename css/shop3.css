@@ -1,9 +1,3 @@
-*{
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
     margin: 0;
     padding: 0;
@@ -42,21 +36,22 @@ a {
     align-items: center;
     display: flex;
     flex-direction: row;
-    }
 
-.shoppingcart{  
-    color: #040404;
-    padding-left: 15px;
-    transition: 0.3s;
     }
-    
+    .shoppingcart{  
+        color: rgb(11, 11, 11);
+        padding-left: 15px;
+        transition: 0.3s;
+        }
     .shoppingcart:hover{
         transform: scale(1.4);
     }
    
 .header-user{
-    color:  #040404;
+
+    color: rgb(11, 11, 11);
     transition: 0.3s;
+   
 }   
 .header-user:hover{
     transform: scale(1.4);
@@ -72,10 +67,11 @@ a {
 }
 
 .btn-sm{
+  
+    color: rgb(164, 181, 164); 
     height: 50px;
     top:50%;
 }
-
 
 .btn {
     background: rgb(164, 181, 164) !important;
@@ -100,23 +96,134 @@ a {
     font-weight: bold;
   }
   
- main{
-    padding-top: 50px;
- }
 
-  .text{
-    text-decoration: underline;
+
+main{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding-top: 170px;
-    height: 500px;
-    font-size: 40px;
-    color: #040404;
+    padding-bottom: 40px;
+  
+}
+/* shop kort */
+
+.shop-kort-rubrik{
+    text-align: center;
+     font-size: 28px;
+     font-weight: bolder;
+    padding-top: 40px;
+    transition: 0.3s;
+ }
+ .shop-kort-rubrik:hover{
+     transform: scale(1.2);
+ }
+ /* .card-group{
+     display: flex;
+ justify-content: space-between;
+ 
+     width: 80%;
+     display: flex;
+    align-items: center; 
+ } */
+ .card .btn{
+    /* position: fixed!important; */
+     border-color: #040404;
+     font-weight: bolder;
+    /* z-index: 1!important; */
+ }
+ 
+ .card {
+     text-align: center;
+     margin-left: 80px;
+     margin-right: 80px;
+     margin-top: 40px;
+     font-weight: bolder;
   }
+  
+
+  .card img{
+    height: 300px;
+  }
+ 
+
+
+.logga {
+    position: relative;
+    height: 50px;
+}
+
+ 
+.btn {
+    padding: 0.6rem 1.3rem;
+    background-color: rgb(164, 181, 164);
+    border: 2px solid #040404;
+    font-size: 0.7rem;
+    color: #040404;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    color: #040404;
+    transform: scale(1.3);
+    border: 2px solid #040404;
+    font-weight: bold;
+  }
+
+  
+
+.wishlist-icon {
+   
+    color: rgb(60, 72, 60)!important;
+    height: 30px!important;
+    padding-left: 25px!important;
+    position: absolute!important;
+    z-index: 1!important;
+    margin: -103% 26%!important;
+}
+.wishlist-icon-konst{
+    color: rgb(60, 72, 60)!important;
+    height: 30px!important;
+    padding-left: 25px!important;
+    position: absolute!important;
+    z-index: 1!important;
+    margin: -103% 26%!important;
+}
+
+.wishlist-icon-inredning{
+    color: rgb(60, 72, 60)!important;
+    height: 30px!important;
+    padding-left: 25px!important;
+    position: absolute!important;
+    z-index: 1!important;
+    margin: -103% 26%!important;
+}
+
+.wishlist-icon-smycken{
+    color: rgb(60, 72, 60)!important;
+    height: 30px!important;
+    padding-left: 25px!important;
+    position: absolute!important;
+    z-index: 1!important;
+    margin: -103% 26%!important;
+}
+
+.card-text-pris{
+    text-align: start!important;
+    padding-left: 15px!important;
+}
 
 
   /* footer */
 
-  .credit{
+ .credit{
     text-align: center;
     color:#040404;
     font-family: Merienda, sans-serif;
@@ -167,7 +274,7 @@ a {
   .category-title{
       grid-column: span 3;
       text-transform: capitalize;
-      color:  #040404;
+      color: #080808;
       font-size: 20px;
       font-weight: 700;
     
@@ -177,7 +284,7 @@ a {
   .category .footer-link{
       text-decoration: none;
       text-transform: capitalize;
-      color: rgba(4, 4, 4, 0.75);
+      color: rgba(9, 8, 8, 0.75);
   }
   
   .footer-link:hover{
@@ -189,7 +296,6 @@ a {
       text-transform: capitalize;
   }
   
-
   .info-text{
     color: rgba(4, 4, 4, 0.75);
     /* margin: 10px 0; */
@@ -204,7 +310,7 @@ a {
       font-size: 20px;
       font-weight: 700;
       margin-top: 30px;
-      color: #040404;
+      color: #060606;
   }
   
   .footer-social-container{
@@ -232,7 +338,7 @@ a {
       left: 0;
       bottom: 0;
       text-align: center;
-      color:  #040404;
+      color: #090909;
       background: rgba(0, 0, 0, 0.2);
   }
  
@@ -248,4 +354,5 @@ a {
      color:#FBAB7E;
      font-weight: bold;
    } 
+  
    

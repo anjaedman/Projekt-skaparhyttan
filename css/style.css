@@ -149,8 +149,8 @@ a {
 .shop-kort-rubrik:hover{
     transform: scale(1.2);
 }
+
 .card-group{
-  
     display: flex;
 justify-content: space-between;
    align-items: center; 
