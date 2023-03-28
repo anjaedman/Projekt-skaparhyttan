@@ -1,0 +1,147 @@
+[
+    {
+        "name": "Ängel 1",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/glasunderlagg3.jpg",
+        "serial": "15010001"
+
+        },
+        
+        
+   
+    {
+        "name": "Ängel 2",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/angel2.jpg",
+        "serial": "15010002"
+
+        },
+        
+    
+    {
+        "name": "Ängel 3",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/angel3.jpg",
+        "serial": "15010003"
+   
+        },
+        
+   
+    {
+        "name": "Ängel 4",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/angel4.jpg",
+        "serial": "15010004"
+    
+        },
+        
+
+    {
+        "name": "Ängel 5",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/angel5.jpg",
+        "serial": "15010005"
+     
+        },
+        
+   
+    {
+        "name": "Ängel 6",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/angel6.jpg",
+        "serial": "15010006"
+  
+        },
+    {
+        "name": "Ängel 7",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/angel7.jpg",
+        "serial": "15010007"
+     
+        },
+    {
+        "name": "Astrid",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/astrid.jpg",
+        "serial": "15010008"
+    
+        },
+    {
+        "name": "Återvinningsskåp",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/atervinning2.jpg",
+        "serial": "15010009"
+     
+        },
+    {
+        "name": "Matbord till rådjur",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/bambi1.jpg",
+        "serial": "150100010"
+       
+        },
+    {
+        "name": "Disktrasa 1",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/disktrasa1.jpg",
+        "serial": "150100011"
+    
+        },
+    {
+        "name": "Fairyhus 1",
+        "price": 499,
+        "shortDesc": "",
+        "category": "Inredning",
+        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "imgSrc": "../img/fairy1.jpg",
+        "serial": "150100012"
+    
+        },
+    {
+        "name": "Fairyhus 2",
+        "price": 399,
+        "shortDesc": "Inredning",
+        "category": "Inredning",
+        "longDesc": "Skate ipsum dolor sit amet, 50-50 Sidewalk Surfer nose bump kickflip bruised heel fakie berm soul skate. Bluntslide transition nollie hard flip bank pressure flip ho-ho. Steps rip grip nosepicker roll-in yeah 540 pump. ",
+        "imgSrc": "../img/fairy2.jpg",
+        "serial": "150100013"
+     
+      }
+      
+
+
+
+]

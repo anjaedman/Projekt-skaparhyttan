@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/shop.css">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Skaparhyttan-produkt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
 
 
     <!-- länk som ska in i head taggen, den behöver ligga ovanför din egen CSS fil då den behöver läsas in av webbläsaren innan din CSS läses in. -->
@@ -29,264 +22,156 @@
 
     <script src="https://kit.fontawesome.com/003b6bb9ad.js" crossorigin="anonymous"></script>
 
+
+  <link rel="stylesheet" href="../css/product-sidor.css">
+
 </head>
+
 <body>
+
+  <!-- header  -->
   <header>
 
-    
-  <div class="nav-bar">
+    <div class="head-container">
+        <!-- navbar -->
+        <nav class="navbar">
+          <!-- <a href = "index.html" class = "navbar-brand">Vintage.</a> -->
+          
+          <!-- <h5 class="logga-text" onclick="document.location='index.html'">Skaparhyttan</h5> -->
+          <!-- <div class="banner-img">
+            <img src="images/sinus-logo.svg" alt="Sinus banner image">
+          </div> -->
+  
+  
+          <div class="navbar-collapse">
+            <ul>
+              <li><a href="/pages/shop.html" class="dropdown-item">Butik</a></li>
+              <li><a href="#footer-title" class="dropdown-item">Om oss</a></li>
+              <li><a href="../inspiration.html" class="dropdown-item">Inspiration</a></li>
+              <li><a href="../pages/kassa.html" class="dropdown-item">Kassa</a></li>
+              <li><a href="../pages/konto.html" class="dropdown-item">Konto</a></li>
+              <li><a href="#footer-title" class="dropdown-item">Kontakt</a></li>
+            </ul>
+          </div>  
+  
+  
+          <button type="button" class="navbar-toggler">
+            <i class="fas fa-bars"></i>
+          </button>
+  
+          <h5 class="logga-text" onclick="document.location='/index.html'">Skaparhyttan</h5>
 
-    <div class="dropdown" id="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      
-      </button>
-      <ul class="dropdown-menu">
-        <li><button class="dropdown-item" type="button" onclick="document.location='../shop.html'">Butik</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Om oss</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='../inspiration.html'">Inspiration</button></li>
-          <li><button class="dropdown-item" type="button" onclick="document.location='/pages/wishlist.html'">Wishlist</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='kassa.html'">kassa</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='konto.html'">Konto</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Kontakt</button></li>
-      </ul>
-    </div>
-
-    <h5 class="logga-text" onclick="document.location='../index.html'">Skaparhyttan</h5>
-    <div>     
-        <!-- <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a> -->
-        <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
-        </div>
-        <div class="box">
-    
-            <div class="cart-count">0</div>
+          <div>     
             <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a>
-            <ion-icon name="cart"  id="cart-icon" ></ion-icon>
-            
-            <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
+            </div>
+
+        <div class="cart">
+          <button type="button" img src="imgages/cart.png" id="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count-info"></span>
+          </button>
+
+          <div class="cart-container">
+            <div class="cart-list">
+              <!-- single item -->
+              <!-- <div class = "cart-item">
+                  <img src = "images/armchair.png" alt = "product image">
+                  <div class = "cart-item-info">
+                    <h3 class = "cart-item-name">Arm Chair</h3>
+                    <span class = "cart-item-category">Chair</span>
+                    <span class = "cart-item-price">120.00 kr</span>
+                  </div>
+
+                  <button type = "button" class = "cart-item-del-btn">
+                    <i class = "fas fa-times"></i>
+                  </button>
+                </div> -->
+              <!-- end of single item  -->
+            </div>
+
+            <div class="cart-total">
+              <h3>Total: kr</h3>
+              <span id="cart-total-value"></span>
+            </div>
           </div>
-  </div>
- 
+        </div>
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- banner -->
+      <!-- <div class="banner">
+        <div class = "banner-content">
+          <h1>Furniture For Your Home</h1>
+          <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, quis nisi recusandae assumenda ea sequi obcaecati accusantium in provident dolore debitis autem neque vel commodi atque voluptates incidunt aliquam delectus veritatis? Exercitationem, fugit sed!</p>
+          <div class = "btns">
+            <button type="button" class="btn">know more</button>
+            <button type="button" class="btn">more info</button>
+          </div>
+        </div>
 
 
-
-
-
-
-
-    <div class="nav">
-
-      <!-- <a href="#" class="logo">
-        <ion-icon name="fast-food"></ion-icon>
-        Food Delight
-      </a> -->
-
-      <!-- <div class="box">
-        <div class="cart-count">0</div>
-        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
       </div> -->
-
-      <div class="cart">
-        <div class="cart-title">Cart Items</div>
-        <div class="cart-content">
-<!--
-          <div class="cart-box">
-            <img src="images/97.jpg" class="cart-img">
-            <div class="detail-box">
-              <div class="cart-food-title">Special Dosai</div>
-              <div class="price-box">
-                <div class="cart-price">Rs.72</div>
-                 <div class="cart-amt">Rs.72</div>
-             </div>
-              <input type="number" value="1" class="cart-quantity">
-            </div>
-            <ion-icon name="trash" class="cart-remove"></ion-icon>
-          </div>
-
-          <div class="cart-box">
-            <img src="images/97.jpg" class="cart-img">
-            <div class="detail-box">
-              <div class="cart-food-title">Special Dosai</div>
-              <div class="price-box">
-                <div class="cart-price">Rs.72</div>
-                 <div class="cart-amt">Rs.72</div>
-             </div>
-              <input type="number" value="1" class="cart-quantity">
-            </div>
-            <ion-icon name="trash" class="cart-remove"></ion-icon>
-          </div>
-        -->
-        </div>
-        
-      <div class="total">
-        <div class="total-title">Total</div>
-        <div class="total-price">Rs.0</div>
-      </div>
-
-      <button class="btn-buy">Place Order</button>
-
-      <ion-icon name="close" id="cart-close"></ion-icon>
-
-      </div>
-    </div>
+      <!-- end of banner  -->
+    <!-- </div> -->
   </header>
-  <div class="container">
-    <h2 class="title"><br></h2>
-    <div class="shop-content">
+  <!-- end of header -->
 
+  <!-- products section  -->
+  <section class="products">
+    <div class="container">
+      <h2>Inredning</h2>
+      <div class="product-list">
+        <!-- single item -->
+        <!-- <div class = "product-item">
+            <div class = "product-img">
+              <img src = "images/bed.png" alt = "product image">
+              <button type = "button" class = "add-to-cart-btn">
+                <i class = "fas fa-shopping-cart"></i>Add To Cart
+              </button>
+            </div>
 
-      <div class="product-box">
-        <div class="pic">
-          <img src="../img/m-morotskaka3.jpg" class="food-img">
-        </div>
-        <h2 class="food-title">Miniatyrsmycken</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
+            <div class = "product-content">
+              <h3 class = "product-name">Wooden Bed</h3>
+              <span class = "product-category">Bed</span>
+              <p class = "product-price">120.00 kr</p>
+            </div>
+          </div> -->
+        <!-- end of single item -->
       </div>
-
-
-      <div class="product-box">
-        <div class="pic"><img src="../img/Design by Miss Anja Edman 366.jpg" class="food-img"></div>
-        <h2 class="food-title">Glassmycken</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-  
-      <div class="product-box">
-        <div class="pic"><img src="../img/Akryltavla växtkraft.jpg" class="food-img"></div>
-        <h2 class="food-title">Konst</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-  
-      <div class="product-box">
-        <div class="pic"><img src="../img/kakfat1.jpg" class="food-img"></div>
-        <h2 class="food-title">Kakfat</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-  
-      <div class="product-box">
-        <div class="pic"><img src="../img/ängel1.jpg" class="food-img"></div>
-        <h2 class="food-title">Änglar</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-  
-      <div class="product-box">
-        <div class="pic"><img src="../img/ljus6.jpg" class="food-img"></div>
-        <h2 class="food-title">Ljus</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-  
-  
-      <div class="product-box">
-        <div class="pic"><img src="../img/vekhållare-flera.jpg" class="food-img"></div>
-        <h2 class="food-title">Vekhållare</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-  
-  
-      <div class="product-box">
-        <div class="pic"><img src="../img/ull-figurer.jpg" class="food-img"></div>
-        <h2 class="food-title">Ullfigurer</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-  
-      <div class="product-box">
-        <div class="pic"> <img src="../img/underlägg-flera.jpg" class="food-img">
-        </div>
-        <h2 class="food-title">Glasunderlägg</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-
-      <div class="product-box">
-        <div class="pic">
-          <img src="../img/lp-dala.jpg" class="food-img">
-        </div>
-        <h2 class="food-title">LP-klockor</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-
-      <div class="product-box">
-        <div class="pic">
-          <img src="../img/fairy1.jpg" class="food-img">
-        </div>
-        <h2 class="food-title">Småhus</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-
-      <div class="product-box">
-        <div class="pic">
-          <img src="../img/smyckeburkar.jpg" class="food-img">
-        </div>
-        <h2 class="food-title">Askar</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-
-      <div class="product-box">
-        <div class="pic">
-          <img src="../img/pendlar.jpg" class="food-img">
-        </div>
-        <h2 class="food-title">Pendlar</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-
-      <div class="product-box">
-        <div class="pic">
-          <img src="../img/blomma22.JPG" class="food-img">
-        </div>
-        <h2 class="food-title">Doftoljeblad och katter</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-
-
-      <div class="product-box">
-        <div class="pic">
-          <img src="../img/smycke-blomma.jpg" class="food-img">
-        </div>
-        <h2 class="food-title">Silversmycken</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-
     </div>
-  </div>
+  </section>
+  <!-- end of products section -->
 
 
 
 
+
+
+  <!-- footer -->
   <footer>
 
+  
     <div class="footer-content" id="footer-content">
     
       <div class="footer-ul-container">
         <ul class="category">
           <li class="category-title" id="category-title">butik</li>
-          <li><a href="../pages/smycken.html" class="footer-link">smycken</a></li>
-          <li><a href="../pages/konst.html" class="footer-link">konst</a></li>
-          <li><a href="../pages/inredning.html" class="footer-link">inredning</a></li>
+          <li><a href="./pages/smycken.html" class="footer-link">smycken</a></li>
+          <li><a href="./pages/konst.html" class="footer-link">konst</a></li>
+          <li><a href="./pages/inredning.html" class="footer-link">inredning</a></li>
         
       </ul>
         
       </div>
   </div>
   <p class="footer-title-about" id="footer-title">om oss</p>
-<p class="info-text">Skaparhyttan är ett företag som bygger på Anja Edmans skaparkraft och fantasi. 
-Utbudet  är brett och smalt men alltid med glimten i ögat och fullt av lekfulhet, materialen likaså allt från ull till glas. <br>
-Anja har varit skapande sedan barnsben och nu tagit steget ut i världen så att fler skall få njuta av kreationerna. <br>
-Om du önskar något egendesignat hör av dig, här finns bara möjligheter. <br>
-Välkommen! </p>
-
-  <p class="footer-title" id="footer-title">kontakt</p>
+  <p class="info-text">Skaparhyttan är ett företag som bygger på Anja Edmans skaparkraft och fantasi. 
+  Utbudet  är brett och smalt men alltid med glimten i ögat och fullt av lekfulhet, materialen likaså allt från ull till glas. <br>
+  Anja har varit skapande sedan barnsben och nu tagit steget ut i världen så att fler skall få njuta av kreationerna. <br>
+  Om du önskar något egendesignat hör av dig, här finns bara möjligheter. <br>
+  Välkommen! </p>
+  
+  <p class="footer-title">kontakt</p>
   <p class="info">email - skaparhyttan@outlook.com</p>
   <p class="info">telephone - 073-9376010</p>
   <div class="footer-social-container">
@@ -303,16 +188,23 @@ Välkommen! </p>
   <p class="footer-credit">Butiken med det lilla extra!</p>
   
   </footer>
-
   
-      <!-- Länk för Javascript filerna, den ska antagligen ligga först den också - men vi har  inte ens börjat med JS på Udemy än, så kan återkomma med det.-->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"
-      ></script>
-  
+  <!-- end of footer -->
 
-  <script src="../js/shop.js"></script>
+
+
+
+
+    <!-- Länk för Javascript filerna, den ska antagligen ligga först den också - men vi har  inte ens börjat med JS på Udemy än, så kan återkomma med det.-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+  <script src="../js/lp-klockor.js"></script>
 </body>
+
 </html>

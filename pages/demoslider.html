@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <!-- länk som ska in i head taggen, den behöver ligga ovanför din egen CSS fil då den behöver läsas in av webbläsaren innan din CSS läses in. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://kit.fontawesome.com/003b6bb9ad.js" crossorigin="anonymous"></script>
+
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link rel="stylesheet" href="../css/demoslider.css">
+<link rel="stylesheet" href="../css/shop.css">
+
+
+
+</head>
+<body>
+  <header>
+
+    
+  <div class="nav-bar">
+
+    <div class="dropdown" id="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      
+      </button>
+      <ul class="dropdown-menu">
+        <li><button class="dropdown-item" type="button" onclick="document.location='../shop.html'">Butik</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Om oss</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='../inspiration.html'">Inspiration</button></li>
+          <li><button class="dropdown-item" type="button" onclick="document.location='/pages/wishlist.html'">Wishlist</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='kassa.html'">kassa</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='konto.html'">Konto</button></li>
+        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Kontakt</button></li>
+      </ul>
+    </div>
+
+    <h5 class="logga-text" onclick="document.location='../index.html'">Skaparhyttan</h5>
+    <div>     
+        <!-- <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a> -->
+        <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
+        </div>
+        <div class="box">
+    
+            <div class="cart-count">0</div>
+            <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a>
+            <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+            
+            <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
+          </div>
+  </div>
+ 
+
+
+
+
+
+
+
+    <div class="nav">
+
+      <!-- <a href="#" class="logo">
+        <ion-icon name="fast-food"></ion-icon>
+        Food Delight
+      </a> -->
+
+      <!-- <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div> -->
+
+      <div class="cart">
+        <div class="cart-title">Din kassa</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Totalt</div>
+        <div class="total-price">0:-</div>
+      </div>
+
+      <button class="btn-buy">Lägg Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+    
+    <div class="nav-bar">
+  
+      <div class="dropdown" id="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button" onclick="document.location='../shop.html'">Butik</button></li>
+          <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Om oss</button></li>
+          <li><button class="dropdown-item" type="button" onclick="document.location='../inspiration.html'">Inspiration</button></li>
+            <li><button class="dropdown-item" type="button" onclick="document.location='/pages/wishlist.html'">Wishlist</button></li>
+          <li><button class="dropdown-item" type="button" onclick="document.location='/pages/kassa.html'">kassa</button></li>
+          <li><button class="dropdown-item" type="button" onclick="document.location='/pages/konto.html'">Konto</button></li>
+          <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Kontakt</button></li>
+        </ul>
+      </div>
+  
+      <h5 class="logga-text" onclick="document.location='../index.html'">Skaparhyttan</h5>
+      <div>     
+          <!-- <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a> -->
+          <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
+          </div>
+          <div class="box">
+      
+              <!-- <div class="cart-count">0</div> -->
+              <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a>
+              <!-- <ion-icon name="cart"  id="cart-icon" ></ion-icon> -->
+              
+              <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
+            </div>
+    </div>
+   
+  
+  
+      <div class="nav">
+  
+        <!-- <a href="#" class="logo">
+          <ion-icon name="fast-food"></ion-icon>
+          Food Delight
+        </a> -->
+  
+        <!-- <div class="box">
+          <div class="cart-count">0</div>
+          <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+        </div> -->
+  
+        <div class="cart">
+          <div class="cart-title">Cart Items</div>
+          <div class="cart-content">
+ 
+          </div>
+          
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">Rs.0</div>
+        </div>
+  
+        <button class="btn-buy">Place Order</button>
+  
+        <ion-icon name="close" id="cart-close"></ion-icon>
+  
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+<!-- infogat kort -->
+
+<div class="nav">
+
+    <!-- <a href="#" class="logo">
+      <ion-icon name="fast-food"></ion-icon>
+      Food Delight
+    </a> -->
+
+    <!-- <div class="box">
+      <div class="cart-count">0</div>
+      <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+    </div> -->
+
+    <div class="cart">
+      <div class="cart-title">Din kassa</div>
+      <div class="cart-content">
+
+      </div>
+      
+    <div class="total">
+      <div class="total-title">Totalt</div>
+      <div class="total-price">0:-</div>
+    </div>
+
+    <button class="btn-buy">Lägg Order</button>
+
+    <ion-icon name="close" id="cart-close"></ion-icon>
+
+    </div>
+  </div>
+</header>
+
+<body>
+  
+
+<div class="container">
+  <h2 class="title"></h2>
+  <div class="shop-content">
+
+    
+<!-- kort 1 -->
+<div class="product-box">
+      <div class="pic">
+
+        <div class="slider-container">
+    
+            <!-- <a href="https://front.codes/" class="logo hover-target" target="_blank">
+                <img src="https://assets.codepen.io/1462889/fcb.png" alt="">
+            </a> -->
+        
+            <div class="section full-height over-hide px-4 px-sm-0">
+                <div class="container-card">
+                    <div class="row full-height justify-content-center">
+                        <div class="col-lg-10 col-xl-8 align-self-center padding-tb">
+                            <div class="section mx-auto text-center slider-height-padding">
+                                  <input class="checkbox frst " type="radio" id="slide-1" name="slider" checked/>
+                                  <label for="slide-1"></label>
+                                  <input class="checkbox scnd" type="radio" name="slider" id="slider-2"/>
+                                  <label for="slider-2"></label>
+                                  <input class="checkbox thrd" type="radio" name="slider" id="slider-3"/>
+                                  <label for="slider-3"></label>
+                                  <input class="checkbox foth" type="radio" name="slider" id="slider-4"/>
+                                  <label for="slider-4"></label>
+                                <ul>
+                                    <li>
+                                        <!-- <span>MALE GOOFY FACE</span> -->
+                                    </li>
+                                    <li>
+                                        <!-- <span>TOY PIG</span> -->
+                                    </li>
+                                    <li>
+                                        <!-- <span>SHY PORTRAIT</span> -->
+                                    </li>
+                                    <li>
+                                        <!-- <span>SKATEBOARD FACE</span> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+        
+    
+      </div>
+
+    
+      
+
+      <h2 class="food-title">Ängel</h2>
+      <span class="food-price">300:-</span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+    </div>
+
+    <!-- kort 2 -->
+    <div class="product-box">
+        <div class="pic"><img src="../img/ängel2.jpg" class="food-img">
+        </div>
+  
+        <h2 class="food-title">Ängel 11</h2>
+        <span class="food-price">300:-</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+    
+
+      <!-- kort 3 -->
+      <div class="product-box">
+        <div class="pic"><img src="../img/ängel2.jpg" class="food-img">
+        </div>
+  
+        <h2 class="food-title">Ängel 12</h2>
+        <span class="food-price">300:-</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <!-- kort 4 slider med banderoll-->
+  
+
+     <div class="product-box">
+      <div class="pic">
+        <!-- <img src="../img/ängel1.jpg" class="food-img"> -->
+      </div>
+
+      <!-- card-carusel -->
+
+      <div class="product-carusel" >
+        <div class="card-container">
+          <div class="slide-container-1">
+          <div class="mySlides">
+            <!-- <div class="numbertext">1 / 6</div> -->
+            <div class="pic">
+            <img src="../img/ängel1.jpg" class="food-img" style="width:100%">
+          </div>
+          </div>
+        
+          <div class="mySlides">
+            <!-- <div class="numbertext">2 / 6</div> -->
+            <img src="../img/ängel2.jpg"  class="food-img" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <!-- <div class="numbertext">3 / 6</div> -->
+            <img src="../img/ängel3.jpg"  class="food-img" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <!-- <div class="numbertext">4 / 6</div> -->
+            <img src="../img/ängel4.jpg" class="food-img" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <!-- <div class="numbertext">5 / 6</div> -->
+            <img src="../img/ängel5.jpg" class="food-img" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <!-- <div class="numbertext">6 / 6</div> -->
+            <img src="../img/ängel6.jpg" class="food-img" style="width:100%">
+          </div>
+            
+          <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+         -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor " src="../img/ängel1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ängel 1">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../img/ängel2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ängel 1">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../img/ängel3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ängel 1">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../img/ängel4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ängel 1">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../img/ängel5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ängel 1">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="../img/ängel6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Ängel 1">
+            </div>
+          </div>
+          </div>
+        </div>
+         
+     
+      </div>
+      <h2 class="food-title">Ängel 14</h2>
+      <span class="food-price">300:- <br></span>
+      <ion-icon name="cart" class="add-cart"></ion-icon>
+      <!-- <button class="btn btn-shop-card">Se mer</button> -->
+    </div>
+
+ <!-- kort 5 -->
+ <div class="product-box">
+  <div class="pic"><img src="../img/ängel2.jpg" class="food-img">
+  </div>
+
+  <h2 class="food-title">Ängel 15</h2>
+  <span class="food-price">300:-</span>
+  <ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+
+ <!-- kort 6 -->
+ <div class="product-box">
+  <div class="pic"><img src="../img/ängel2.jpg" class="food-img">
+  </div>
+
+  <h2 class="food-title">Ängel 16</h2>
+  <span class="food-price">300:-</span>
+  <ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+
+ <!-- kort 7 -->
+ <div class="product-box">
+  <div class="pic"><img src="../img/ängel2.jpg" class="food-img">
+  </div>
+
+  <h2 class="food-title">Ängel 17</h2>
+  <span class="food-price">300:-</span>
+  <ion-icon name="cart" class="add-cart"></ion-icon>
+</div>
+
+</div>
+  
+
+
+
+<footer>
+
+    <div class="footer-content" id="footer-content">
+    
+      <div class="footer-ul-container">
+        <ul class="category">
+          <li class="category-title" id="category-title">butik</li>
+          <li><a href="../pages/smycken.html" class="footer-link">smycken</a></li>
+          <li><a href="../pages/konst.html" class="footer-link">konst</a></li>
+          <li><a href="../pages/inredning.html" class="footer-link">inredning</a></li>
+        
+      </ul>
+        
+      </div>
+  </div>
+  <p class="footer-title-about" id="footer-title">om oss</p>
+<p class="info-text">Skaparhyttan är ett företag som bygger på Anja Edmans skaparkraft och fantasi. 
+Utbudet  är brett och smalt men alltid med glimten i ögat och fullt av lekfulhet, materialen likaså allt från ull till glas. <br>
+Anja har varit skapande sedan barnsben och nu tagit steget ut i världen så att fler skall få njuta av kreationerna. <br>
+Om du önskar något egendesignat hör av dig, här finns bara möjligheter. <br>
+Välkommen! </p>
+
+  <p class="footer-title" id="footer-title">kontakt</p>
+  <p class="info">email - skaparhyttan@outlook.com</p>
+  <p class="info">telephone - 073-9376010</p>
+  <div class="footer-social-container">
+      <div>
+          <a href="#" class="social-link">terms & services</a>
+          <a href="#" class="social-link">privacy page</a>
+      </div>
+      <div>
+          <a href="https://www.instagram.com/skaparhyttan/" class="social-link">instagram</a>
+          <a href="https://www.facebook.com/SkaparHyttan/?paipv=0&eav=AfZBelnS810zuNOxtmHJAGVBFnXYEYp0sv7fd58NHgyAfPAnP4ENIAqV3CPhnr_xcxA&_rdr" class="social-link">facebook</a>
+        
+      </div>
+  </div>
+  <p class="footer-credit">Butiken med det lilla extra!</p>
+  
+  </footer>
+
+  
+      <!-- Länk för Javascript filerna, den ska antagligen ligga först den också - men vi har  inte ens börjat med JS på Udemy än, så kan återkomma med det.-->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+  
+
+
+<!-- <script src="../js/demoslider.js"></script> -->
+<script src="../js/shop.js"></script>
+</body>
+</html>

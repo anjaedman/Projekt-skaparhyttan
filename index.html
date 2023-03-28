@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Projektskaparhyttan</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +26,84 @@
 
     <script src="https://kit.fontawesome.com/003b6bb9ad.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  
+
   </head>
   <body>
 <header>
-  
 
+
+  <div class="head-container">
+    <!-- navbar -->
+    <nav class="navbar">
+      <!-- <a href = "index.html" class = "navbar-brand">Vintage.</a> -->
+      
+      <!-- <h5 class="logga-text" onclick="document.location='index.html'">Skaparhyttan</h5> -->
+      <!-- <div class="banner-img">
+        <img src="images/sinus-logo.svg" alt="Sinus banner image">
+      </div> -->
+
+
+      <div class="navbar-collapse">
+        <ul>
+          <li><a href="pages/shop.html" class="dropdown-item">Butik</a></li>
+          <li><a href="#footer-title" class="dropdown-item">Om oss</a></li>
+          <li><a href="inspiration.html" class="dropdown-item">Inspiration</a></li>
+          <li><a href="pages/kassa.html" class="dropdown-item">Kassa</a></li>
+          <li><a href="pages/konto.html" class="dropdown-item">Konto</a></li>
+          <li><a href="#footer-title" class="dropdown-item">Kontakt</a></li>
+        </ul>
+      </div>  
+
+
+      <button type="button" class="navbar-toggler">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <h5 class="logga-text" onclick="document.location='/index.html'">Skaparhyttan</h5>
+
+      <div>     
+        <a href="#footer-title"> <img src="img/user.png"   class="header-user"> </a>
+        </div>
+
+    <div class="cart">
+      <button type="button" img src="img/cart.png" id="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count-info"></span>
+      </button>
+
+      <div class="cart-container">
+        <div class="cart-list">
+          <!-- single item -->
+          <!-- <div class = "cart-item">
+              <img src = "images/armchair.png" alt = "product image">
+              <div class = "cart-item-info">
+                <h3 class = "cart-item-name">Arm Chair</h3>
+                <span class = "cart-item-category">Chair</span>
+                <span class = "cart-item-price">120.00 kr</span>
+              </div>
+
+              <button type = "button" class = "cart-item-del-btn">
+                <i class = "fas fa-times"></i>
+              </button>
+            </div> -->
+          <!-- end of single item  -->
+        </div>
+
+        <div class="cart-total">
+          <h3>Total: kr</h3>
+          <span id="cart-total-value"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  
+<!-- 
   <div class="nav-bar">
 
     <div class="dropdown" id="dropdown">
@@ -51,17 +123,14 @@
 
 
     <h5 class="logga-text" onclick="document.location='index.html'">Skaparhyttan</h5>
-   <!-- <div>  <i class="fa-solid fa-cart-shopping shoppingcart"  style='font-size:24px'></i> </div> -->
+   
    
    <div>     
    <a href="#footer-title"> <img src="img/user.png"   class="header-user"> </a>
    <a href="/pages/kassa.html"> <img src="img/cart.png"   class="shoppingcart"> </a>
     </div>
- <!-- <img src="img/user.png" onclick="document.location='#kontakt-title'"  class="header-user"> -->
-
-   <!-- <img src="img/cart.png" onclick="document.location='kassa.html'"  class="fa-solid fa-cart-shopping shoppingcart">  -->
-  </div>
- 
+   </div>
+  -->
 
 </header>
 
@@ -120,7 +189,7 @@
         <div class="card-body">
           <h5 class="card-title">SMYCKEN</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./pages/smycken.html" class="btn btn-primary">HANDLA</a>
+          <a href="pages/shop.html" class="btn btn-primary">HANDLA</a>
         </div>
       </div>
     
@@ -129,7 +198,7 @@
         <div class="card-body">
           <h5 class="card-title">KONST</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./pages/konst.html" class="btn btn-primary">HANDLA</a>
+          <a href="pages/shop.html" class="btn btn-primary">HANDLA</a>
         </div>
       </div>
     
@@ -138,7 +207,7 @@
         <div class="card-body">
           <h5 class="card-title">INREDNING</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./pages/inredning.html" class="btn btn-primary">HANDLA</a>
+          <a href="pages/shop.html" class="btn btn-primary">HANDLA</a>
         </div>
       </div>
 

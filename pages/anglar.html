@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Skaparhyttan-produkt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
 
 
     <!-- länk som ska in i head taggen, den behöver ligga ovanför din egen CSS fil då den behöver läsas in av webbläsaren innan din CSS läses in. -->
@@ -30,371 +23,155 @@
     <script src="https://kit.fontawesome.com/003b6bb9ad.js" crossorigin="anonymous"></script>
 
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-<link rel="stylesheet" href="../css/shop.css">
-
+  <link rel="stylesheet" href="../css/product-sidor.css">
 
 </head>
+
 <body>
+
+  <!-- header  -->
   <header>
 
-    
-  <div class="nav-bar">
+    <div class="head-container">
+        <!-- navbar -->
+        <nav class="navbar">
+          <!-- <a href = "index.html" class = "navbar-brand">Vintage.</a> -->
+          
+          <!-- <h5 class="logga-text" onclick="document.location='index.html'">Skaparhyttan</h5> -->
+          <!-- <div class="banner-img">
+            <img src="images/sinus-logo.svg" alt="Sinus banner image">
+          </div> -->
+  
+  
+          <div class="navbar-collapse">
+            <ul>
+              <li><a href="/pages/shop.html" class="dropdown-item">Butik</a></li>
+              <li><a href="#footer-title" class="dropdown-item">Om oss</a></li>
+              <li><a href="../inspiration.html" class="dropdown-item">Inspiration</a></li>
+              <li><a href="../pages/kassa.html" class="dropdown-item">Kassa</a></li>
+              <li><a href="../pages/konto.html" class="dropdown-item">Konto</a></li>
+              <li><a href="#footer-title" class="dropdown-item">Kontakt</a></li>
+            </ul>
+          </div>  
+  
+  
+          <button type="button" class="navbar-toggler">
+            <i class="fas fa-bars"></i>
+          </button>
+  
+          <h5 class="logga-text" onclick="document.location='/index.html'">Skaparhyttan</h5>
 
-    <div class="dropdown" id="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      
-      </button>
-      <ul class="dropdown-menu">
-        <li><button class="dropdown-item" type="button" onclick="document.location='../shop.html'">Butik</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Om oss</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='../inspiration.html'">Inspiration</button></li>
-          <li><button class="dropdown-item" type="button" onclick="document.location='/pages/wishlist.html'">Wishlist</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='kassa.html'">kassa</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='konto.html'">Konto</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Kontakt</button></li>
-      </ul>
-    </div>
-
-    <h5 class="logga-text" onclick="document.location='../index.html'">Skaparhyttan</h5>
-    <div>     
-        <!-- <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a> -->
-        <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
-        </div>
-        <div class="box">
-    
-            <div class="cart-count">0</div>
+          <div>     
             <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a>
-            <ion-icon name="cart"  id="cart-icon" ></ion-icon>
-            
-            <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
-          </div>
-  </div>
- 
-
-
-
-
-
-
-
-    <div class="nav">
-
-      <!-- <a href="#" class="logo">
-        <ion-icon name="fast-food"></ion-icon>
-        Food Delight
-      </a> -->
-
-      <!-- <div class="box">
-        <div class="cart-count">0</div>
-        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
-      </div> -->
-
-      <div class="cart">
-        <div class="cart-title">Din kassa</div>
-        <div class="cart-content">
-<!--
-          <div class="cart-box">
-            <img src="images/97.jpg" class="cart-img">
-            <div class="detail-box">
-              <div class="cart-food-title">Special Dosai</div>
-              <div class="price-box">
-                <div class="cart-price">Rs.72</div>
-                 <div class="cart-amt">Rs.72</div>
-             </div>
-              <input type="number" value="1" class="cart-quantity">
             </div>
-            <ion-icon name="trash" class="cart-remove"></ion-icon>
-          </div>
 
-          <div class="cart-box">
-            <img src="images/97.jpg" class="cart-img">
-            <div class="detail-box">
-              <div class="cart-food-title">Special Dosai</div>
-              <div class="price-box">
-                <div class="cart-price">Rs.72</div>
-                 <div class="cart-amt">Rs.72</div>
-             </div>
-              <input type="number" value="1" class="cart-quantity">
+        <div class="cart">
+          <button type="button" img src="images/cart.png" id="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count-info"></span>
+          </button>
+
+          <div class="cart-container">
+            <div class="cart-list">
+              <!-- single item -->
+              <!-- <div class = "cart-item">
+                  <img src = "images/armchair.png" alt = "product image">
+                  <div class = "cart-item-info">
+                    <h3 class = "cart-item-name">Arm Chair</h3>
+                    <span class = "cart-item-category">Chair</span>
+                    <span class = "cart-item-price">120.00 kr</span>
+                  </div>
+
+                  <button type = "button" class = "cart-item-del-btn">
+                    <i class = "fas fa-times"></i>
+                  </button>
+                </div> -->
+              <!-- end of single item  -->
             </div>
-            <ion-icon name="trash" class="cart-remove"></ion-icon>
+
+            <div class="cart-total">
+              <h3>Total: kr</h3>
+              <span id="cart-total-value"></span>
+            </div>
           </div>
-        -->
         </div>
-        
-      <div class="total">
-        <div class="total-title">Totalt</div>
-        <div class="total-price">0:-</div>
-      </div>
+      </nav>
+      <!-- end of navbar -->
 
-      <button class="btn-buy">Lägg Order</button>
+      <!-- banner -->
+      <!-- <div class="banner">
+        <div class = "banner-content">
+          <h1>Furniture For Your Home</h1>
+          <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, quis nisi recusandae assumenda ea sequi obcaecati accusantium in provident dolore debitis autem neque vel commodi atque voluptates incidunt aliquam delectus veritatis? Exercitationem, fugit sed!</p>
+          <div class = "btns">
+            <button type="button" class="btn">know more</button>
+            <button type="button" class="btn">more info</button>
+          </div>
+        </div>
 
-      <ion-icon name="close" id="cart-close"></ion-icon>
 
+      </div> -->
+      <!-- end of banner  -->
+    <!-- </div> -->
+  </header>
+  <!-- end of header -->
+
+  <!-- products section  -->
+  <section class="products">
+    <div class="container">
+      <h2>Inredning</h2>
+      <div class="product-list">
+        <!-- single item -->
+        <!-- <div class = "product-item">
+            <div class = "product-img">
+              <img src = "images/bed.png" alt = "product image">
+              <button type = "button" class = "add-to-cart-btn">
+                <i class = "fas fa-shopping-cart"></i>Add To Cart
+              </button>
+            </div>
+
+            <div class = "product-content">
+              <h3 class = "product-name">Wooden Bed</h3>
+              <span class = "product-category">Bed</span>
+              <p class = "product-price">120.00 kr</p>
+            </div>
+          </div> -->
+        <!-- end of single item -->
       </div>
     </div>
-  </header>
-  <div class="container">
-    <h2 class="title"></h2>
-    <div class="shop-content">
-
-<!-- kort 1 -->
-<div>
-      <div class="product-box">
-        <div class="pic">
-          <!-- <img src="../img/ängel1.jpg" class="food-img"> -->
-        </div>
-
-        <!-- card-carusel -->
-
-        <div class="product-carusel" >
-          <div class="card-container">
-            <div class="mySlides">
-              <!-- <div class="numbertext">1 / 6</div> -->
-              <div class="pic">
-              <img src="../img/ängel1.jpg" class="food-img" style="width:100%">
-            </div>
-            </div>
-          
-            <div class="mySlides">
-              <!-- <div class="numbertext">2 / 6</div> -->
-              <img src="../img/ängel2.jpg"  class="food-img" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <!-- <div class="numbertext">3 / 6</div> -->
-              <img src="../img/ängel3.jpg"  class="food-img" style="width:100%">
-            </div>
-              
-            <div class="mySlides">
-              <!-- <div class="numbertext">4 / 6</div> -->
-              <img src="../img/ängel4.jpg" class="food-img" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <!-- <div class="numbertext">5 / 6</div> -->
-              <img src="../img/ängel5.jpg" class="food-img" style="width:100%">
-            </div>
-              
-            <div class="mySlides">
-              <!-- <div class="numbertext">6 / 6</div> -->
-              <img src="../img/ängel6.jpg" class="food-img" style="width:100%">
-            </div>
-              
-            <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-           -->
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-          
-            <div class="row">
-              <div class="column">
-                <img class="demo cursor " src="../img/ängel1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ängel 1">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ängel 1">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ängel 1">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ängel 1">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ängel 1">
-              </div>    
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Ängel 1">
-              </div>
-            </div>
-          </div>
-           
-       
-        </div>
-        <h2 class="food-title">Handgjord i lera</h2>
-        <span class="food-price">300:- <br></span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-        <!-- <button class="btn btn-shop-card">Se mer</button> -->
-      </div>
- </div>
-      
-<!-- kort 2 -->
-<div class="product-box">
-        <div class="pic"><img src="../img/ängel2.jpg" class="food-img">
-        </div>
-
-        <h2 class="food-title">Ängel 2</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-  
-
-<!-- kort 3       -->
-
-      <div class="product-box product-box-3">
-        <div class="pic">
-          <!-- <img src="../img/ängel3.jpg" class="food-img"> -->
-        </div>
-
-         <!-- card-carusel -->
-
-         <div class="product-carusel" >
-          <div class="container">
-            <div class="mySlides__3">
-              <!-- <div class="numbertext">1 / 6</div> -->
-              <div class="pic">
-              <img src="../img/ängel4.jpg"  class="food-img" style="width:100%">
-            </div>
-            </div>
-          
-            <div class="mySlides">
-              <!-- <div class="numbertext">2 / 6</div> -->
-              <img src="../img/ängel5.jpg"  class="food-img"  style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <!-- <div class="numbertext">3 / 6</div> -->
-              <img src="../img/ängel6.jpg"   class="food-img" style="width:100%">
-            </div>
-              
-            <div class="mySlides">
-              <!-- <div class="numbertext">4 / 6</div> -->
-              <img src="../img/ängel7.jpg"  class="food-img" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <!-- <div class="numbertext">5 / 6</div> -->
-              <img src="../img/ängel1.jpg"  class="food-img" style="width:100%">
-            </div>
-              
-            <div class="mySlides">
-              <!-- <div class="numbertext">6 / 6</div> -->
-              <img src="../img/ängel2.jpg"  class="food-img" style="width:100%">
-            </div>
-              
-            <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-           -->
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-          
-            <div class="row">
-              <div class="column">
-                <img class="demo cursor " src="../img/ängel3.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ängel 3">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel4.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ängel 3">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel5.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ängel 3">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel6.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ängel 3">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel7.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ängel 3">
-              </div>    
-              <div class="column">
-                <img class="demo cursor" src="../img/ängel1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Ängel 3">
-              </div>
-            </div>
-            
-          </div>
-           
-
-        </div>
-        <h2 class="food-title">Handgjord i lera</h2>
-        <span class="food-price">300:-</span>
-        <ion-icon name="cart" class="add-cart"></ion-icon>
-      </div>
-
- <!-- kort 4       -->
-
- <div class="product-box">
-  <div class="pic">
-    <!-- <img src="../img/ängel4.jpg" class="food-img"> -->
-  </div>
-
-  
-
-  <h2 class="food-title">Handgjord i lera</h2>
-  <span class="food-price">300:-</span>
-  <ion-icon name="cart" class="add-cart"></ion-icon>
-</div>
-
-
-<!-- kort 5       -->
-
-<div class="product-box">
-  <div class="pic">
-    <img src="../img/ängel5.jpg" class="food-img">
-  </div>
-  
-  <h2 class="food-title">Handgjord i lera</h2>
-  <span class="food-price">300:-</span>
-  <ion-icon name="cart" class="add-cart"></ion-icon>
-</div>
-
-<!-- kort 6       -->
-
-<div class="product-box">
-  <div class="pic">
-    <img src="../img/ängel6.jpg" class="food-img">
-  </div>
-   
-  <h2 class="food-title">Handgjord i lera</h2>
-  <span class="food-price">300:-</span>
-  <ion-icon name="cart" class="add-cart"></ion-icon>
-</div>
-
-<!-- kort 7       -->
-
-<div class="product-box">
-  <div class="pic">
-    <!-- <img src="../img/ängel7.jpg" class="food-img"> -->
-  </div>
-   
-  <h2 class="food-title">Handgjord i lera</h2>
-  <span class="food-price">300:-</span>
-  <ion-icon name="cart" class="add-cart"></ion-icon>
-</div>
-
-
-
-</div>
-</div>
+  </section>
+  <!-- end of products section -->
 
 
 
 
+
+
+  <!-- footer -->
   <footer>
 
+  
     <div class="footer-content" id="footer-content">
     
       <div class="footer-ul-container">
         <ul class="category">
           <li class="category-title" id="category-title">butik</li>
-          <li><a href="../pages/smycken.html" class="footer-link">smycken</a></li>
-          <li><a href="../pages/konst.html" class="footer-link">konst</a></li>
-          <li><a href="../pages/inredning.html" class="footer-link">inredning</a></li>
+          <li><a href="./pages/smycken.html" class="footer-link">smycken</a></li>
+          <li><a href="./pages/konst.html" class="footer-link">konst</a></li>
+          <li><a href="./pages/inredning.html" class="footer-link">inredning</a></li>
         
       </ul>
         
       </div>
   </div>
   <p class="footer-title-about" id="footer-title">om oss</p>
-<p class="info-text">Skaparhyttan är ett företag som bygger på Anja Edmans skaparkraft och fantasi. 
-Utbudet  är brett och smalt men alltid med glimten i ögat och fullt av lekfulhet, materialen likaså allt från ull till glas. <br>
-Anja har varit skapande sedan barnsben och nu tagit steget ut i världen så att fler skall få njuta av kreationerna. <br>
-Om du önskar något egendesignat hör av dig, här finns bara möjligheter. <br>
-Välkommen! </p>
-
-  <p class="footer-title" id="footer-title">kontakt</p>
+  <p class="info-text">Skaparhyttan är ett företag som bygger på Anja Edmans skaparkraft och fantasi. 
+  Utbudet  är brett och smalt men alltid med glimten i ögat och fullt av lekfulhet, materialen likaså allt från ull till glas. <br>
+  Anja har varit skapande sedan barnsben och nu tagit steget ut i världen så att fler skall få njuta av kreationerna. <br>
+  Om du önskar något egendesignat hör av dig, här finns bara möjligheter. <br>
+  Välkommen! </p>
+  
+  <p class="footer-title">kontakt</p>
   <p class="info">email - skaparhyttan@outlook.com</p>
   <p class="info">telephone - 073-9376010</p>
   <div class="footer-social-container">
@@ -411,16 +188,23 @@ Välkommen! </p>
   <p class="footer-credit">Butiken med det lilla extra!</p>
   
   </footer>
-
   
-      <!-- Länk för Javascript filerna, den ska antagligen ligga först den också - men vi har  inte ens börjat med JS på Udemy än, så kan återkomma med det.-->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"
-      ></script>
-  
+  <!-- end of footer -->
 
-  <script src="../js/shop.js"></script>
+
+
+
+
+    <!-- Länk för Javascript filerna, den ska antagligen ligga först den också - men vi har  inte ens börjat med JS på Udemy än, så kan återkomma med det.-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+  <script src="../js/anglar.js"></script>
 </body>
+
 </html>
