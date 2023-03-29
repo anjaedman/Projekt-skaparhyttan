@@ -62,7 +62,7 @@ a {
 .frontpage-text{
     position: absolute;
     z-index: 1;
-    margin: 10% 10%;
+    margin: 12% 12%;
 }
 
 .dropdown-menu{
@@ -255,7 +255,17 @@ header .head-container {
 
 /* js related class */
 .show-navbar {
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
   height: 204px;
+  background-color: rgb(164, 181, 164);
+  border-radius: 15px;
+  left: 5%;
+  border: 2px solid #040404 ;
+  position: absolute;
+  z-index: 1;
 }
 
 /*  */

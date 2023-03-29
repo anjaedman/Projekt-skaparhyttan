@@ -1,10 +1,10 @@
 [
     {
-        "name": "Ängel 1",
-        "price": 499,
+        "name": "Handgjorda ljus",
+        "price": 25,
         "shortDesc": "",
         "category": "Inredning",
-        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "longDesc": "En levande låga ger så mycket  av det som är viktigt för oss människor i form av ljus, värme, lugn, trygghet och hopp. Det finns heller inget lättare sätt att skapa stämning som att tända ett ljus.",
         "imgSrc": "../img/ljusstake.jpg",
         "serial": "6010001"
 

@@ -78,7 +78,9 @@ body{
   font-weight: bold;
 }
 
-
+main {
+  padding-top: 110px;
+}
 .container {
   position: relative;
   width: 100%;

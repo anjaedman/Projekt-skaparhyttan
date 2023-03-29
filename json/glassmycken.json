@@ -1,10 +1,10 @@
 [
     {
-        "name": "Ängel 1",
+        "name": "Glassmycke",
         "price": 499,
         "shortDesc": "",
         "category": "Inredning",
-        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "longDesc": "Glassmycken och örhängen, Glasfusing är en mycket gammal hantverksteknik som har kommit tillbaka i hantverk. Fusing är en teknik för att med hjälp av värme smälta samman och forma glas i en så kallad fusingugn. Beroende på typ av glas värms det upp till mellan 700 °C och 900 °C och kyls sedan sakta ned för att glaset inte ska spricka. I dessa smycken så skärs glaset först och läggs i upp till fyra lager, dessa läggs i ugnen för att i olika intervaller värmas upp och sedan i intervaller kylas ner till rumstemperatur denna cykel tar 20-24h, men så blir dom också lite magiska.",
         "imgSrc": "../img/glassmycke-031.jpg",
         "serial": "4010001"
 
