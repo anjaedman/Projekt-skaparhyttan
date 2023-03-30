@@ -28,45 +28,79 @@
     />
 
     <script src="https://kit.fontawesome.com/003b6bb9ad.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/product-sidor.css">
     
 </head>
 <body>
   <header>
 
-    
-  <div class="nav-bar">
+    <div class="head-container">
+      <!-- navbar -->
+      <nav class="navbar">
+        <!-- <a href = "index.html" class = "navbar-brand">Vintage.</a> -->
+        
+        <!-- <h5 class="logga-text" onclick="document.location='index.html'">Skaparhyttan</h5> -->
+        <!-- <div class="banner-img">
+          <img src="images/sinus-logo.svg" alt="Sinus banner image">
+        </div> -->
 
-    <div class="dropdown" id="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      
-      </button>
-      <ul class="dropdown-menu">
-        <li><button class="dropdown-item" type="button" onclick="document.location='../shop.html'">Butik</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Om oss</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='../inspiration.html'">Inspiration</button></li>
-          <li><button class="dropdown-item" type="button" onclick="document.location='/pages/wishlist.html'">Wishlist</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='kassa.html'">kassa</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='konto.html'">Konto</button></li>
-        <li><button class="dropdown-item" type="button" onclick="document.location='#footer-title'">Kontakt</button></li>
-      </ul>
-    </div>
 
-    <h5 class="logga-text" onclick="document.location='../index.html'">Skaparhyttan</h5>
-    <div>     
-        <!-- <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a> -->
-        <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
-        </div>
-        <div class="box">
-    
-            <!-- <div class="cart-count">0</div> -->
-            <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a>
-            <!-- <ion-icon name="cart"  id="cart-icon" ></ion-icon> -->
-            
-            <!-- <a href="kassa.html"> <img src="../img/cart.png"   class="shoppingcart" id="cart-icon"> </a> -->
+        <div class="navbar-collapse">
+          <ul>
+            <li><a href="/pages/shop.html" class="dropdown-item">Butik</a></li>
+            <li><a href="#footer-title" class="dropdown-item">Om oss</a></li>
+            <li><a href="../inspiration.html" class="dropdown-item">Inspiration</a></li>
+            <li><a href="../pages/kassa.html" class="dropdown-item">Kassa</a></li>
+            <li><a href="../pages/konto.html" class="dropdown-item">Konto</a></li>
+            <li><a href="/pages/kontakt.html" class="dropdown-item">Kontakt</a></li>
+          </ul>
+        </div>  
+
+
+        <button type="button" class="navbar-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h5 class="logga-text" onclick="document.location='/index.html'">Skaparhyttan</h5>
+
+        <div>     
+          <a href="#footer-title"> <img src="../img/user.png"   class="header-user"> </a>
           </div>
-  </div>
- 
+
+      <div class="cart">
+        <button type="button" img src="imgages/cart.png" id="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count-info"></span>
+        </button>
+
+        <div class="cart-container">
+          <div class="cart-list">
+            <!-- single item -->
+            <!-- <div class = "cart-item">
+                <img src = "images/armchair.png" alt = "product image">
+                <div class = "cart-item-info">
+                  <h3 class = "cart-item-name">Arm Chair</h3>
+                  <span class = "cart-item-category">Chair</span>
+                  <span class = "cart-item-price">120.00 kr</span>
+                </div>
+
+                <button type = "button" class = "cart-item-del-btn">
+                  <i class = "fas fa-times"></i>
+                </button>
+              </div> -->
+            <!-- end of single item  -->
+          </div>
+
+          <div class="cart-total">
+            <h3>Total: kr</h3>
+            <span id="cart-total-value"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
 
 
     <div class="nav">
@@ -324,5 +358,6 @@ Välkommen! </p>
   
 
   <script src="../js/shop.js"></script>
+  <script src="../js/reserv-product-card.js"></script>
 </body>
 </html>

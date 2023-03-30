@@ -1,10 +1,10 @@
 [
     {
-        "name": "Ängel 1",
-        "price": 499,
+        "name": "Rumsdoft",
+        "price": 49,
         "shortDesc": "",
         "category": "Inredning",
-        "longDesc": "Behöver du en skyddsängel eller känner du någon som skulle behöva det, eller kanske bara införa lite änglaenergi i ditt hem, kolla då in här. Dessa änglar är gjorda i lera, självhärdande.",
+        "longDesc": "Dessa Blad är gjorda i lera, självhärdande.",
         "imgSrc": "../img/blomma1.jpg",
         "serial": "3010001"
 
